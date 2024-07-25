@@ -92,11 +92,11 @@ function Projects() {
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                         <div className='col-span-12'>
                             <FeaturedProject
-                                title='Crypto Screener Application'
-                                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.'
-                                link='/'
+                                title='SkillBridge - Elearning App'
+                                summary='SkillBridge is an advanced e-learning platform built with Python Django and React. It offers features like payment integration, OTP verification, and live chat for real-time interactions, making online learning accessible and efficient for educators and students.'
+                                link='https://learn.skillbridge.store/'
                                 type='Feature project'
-                                github='/'
+                                github='https://github.com/abhinandav/SkillBridge-Elearning-Application'
                                 img={project1}
                             />
                         </div>
@@ -104,7 +104,7 @@ function Projects() {
                             <Project
                                 title='Crypto Screener Application'
                                 link='/'
-                                type='Project'
+                                type='Mini-Project'
                                 github='/'
                                 img={project1}
                             />

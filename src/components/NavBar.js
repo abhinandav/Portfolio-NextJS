@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import  { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon } from './Icons'
+import  { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon, InstaIcon } from './Icons'
 import {motion} from 'framer-motion'
 import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
@@ -73,14 +73,14 @@ const NavBar = () => {
             </nav>
 
             <nav className='flex items-center justify-center flex-wrap '>
-                    <motion.a href='https://twiter.com' target={"_blank"}
+                    <motion.a href='www.linkedin.com/in/avabhinand ' target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 mr-3'>
-                        <TwitterIcon/>
+                        <LinkedInIcon/>
                     </motion.a>
 
-                    <motion.a href='https://twiter.com' target={"_blank"}
+                    <motion.a href='https://github.com/abhinandav' target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3'>
@@ -91,14 +91,14 @@ const NavBar = () => {
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3'>
-                        <LinkedInIcon/>
+                        <TwitterIcon/>
                     </motion.a>
 
                     <motion.a href='https://twiter.com' target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 ml-3'>
-                        <PinterestIcon/>
+                        {/* <InstaIcon/> */}
                     </motion.a>
 
                 <button
@@ -135,26 +135,32 @@ const NavBar = () => {
            </nav>
 
            <nav className='flex items-center justify-center flex-wrap mt-2'>
-                   <motion.a href='https://twiter.com' target={"_blank"}
+
+                <motion.a href='https://twiter.com' target={"_blank"}
                    whileHover={{y:-2}}
                    whileTap={{scale:0.9}}
-                   className='w-6 mr-3 sm:mx-1'>
-                       <TwitterIcon/>
+                   className='w-6 mx-3 sm:mx-1'>
+                       <LinkedInIcon/>
                    </motion.a>
 
-                   <motion.a href='https://twiter.com' target={"_blank"}
+                <motion.a href='https://twiter.com' target={"_blank"}
                    whileHover={{y:-2}}
                    whileTap={{scale:0.9}}
                    className='w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark'>
                        <GithubIcon/>
                    </motion.a>
 
-                   <motion.a href='https://twiter.com' target={"_blank"}
+
+                <motion.a href='https://twiter.com' target={"_blank"}
                    whileHover={{y:-2}}
                    whileTap={{scale:0.9}}
-                   className='w-6 mx-3 sm:mx-1'>
-                       <LinkedInIcon/>
+                   className='w-6 mr-3 sm:mx-1'>
+                       <TwitterIcon/>
                    </motion.a>
+
+                   
+
+                   
 
                    <motion.a href='https://twiter.com' target={"_blank"}
                    whileHover={{y:-2}}

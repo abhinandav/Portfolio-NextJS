@@ -2,7 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import React, { useEffect, useRef } from 'react'
-import profilepic from '../../public/images/profile/developer-pic-2.jpg'
+import profilepic from '../../public/images/profile/image.png'
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
@@ -50,14 +50,14 @@ function about() {
                 <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me</h2>
                     <p className='font-medium'>
-                        Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-                        and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
-                        new and innovative ways to bring my clients&apos; visions to life.
+                        Hi, I&apos;m Abhinand AV, a full stack web developer and UI/UX designer with a passion for creating innovative, functional, 
+                        and user-centered digital experiences. With hands own experience in the field. I am always looking for 
+                        new and innovative ways to bring my ideas into production.
                     </p>
 
                     <p className='my-4 font-medium'>
-                        I believe that design is about more than just making things look pretty – it&apos;s about solving problems and 
-                        creating intuitive, enjoyable experiences for users. 
+                    I believe that beyond coding functionality, creating a seamless user experience involves understanding user needs, designing intuitive interfaces, and ensuring efficient navigation. 
+                    It&rsquo;s about making technology accessible and enjoyable for users while solving real-world problems. 
                     </p>
 
                     <p className='font-medium'>
@@ -80,21 +80,21 @@ function about() {
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                             <AnimatedNumbers value={50}/>+
                         </span >
-                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied clients</h2>
-                    </div>
-
-                    <div className='flex flex-col items-end justify-center xl:items-center'>
-                        <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                        <AnimatedNumbers value={40}/>+
-                        </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Project completed</h2>
                     </div>
 
                     <div className='flex flex-col items-end justify-center xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                        <AnimatedNumbers value={10}/>+
+                        <AnimatedNumbers value={1}/>+
                         </span>
-                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
+                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Hands own experience</h2>
+                    </div>
+
+                    <div className='flex flex-col items-end justify-center xl:items-center'>
+                        <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
+                        <AnimatedNumbers value={5}/>+
+                        </span>
+                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Certifications</h2>
                     </div>
                 </div>
             </div>
