@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import  { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon, InstaIcon } from './Icons'
 import {motion} from 'framer-motion'
 import useThemeSwitcher from '@/hooks/useThemeSwitcher'
+import AnimatedName from './AnimatedName'
 
 
 
@@ -63,14 +64,20 @@ const NavBar = () => {
             <span className={`bg-dark dark:bg-light block  transition-all duration-300 ease-out h-0.5 w-6 rounded-sm translate-y-0.5 ${open?'-rotate-45 -translate-y-1':'translate-y-0.5'}`}></span>
         </button>
 
+        <div className='absolute hidden lg:flex ml-10 mx-5 text-xl'>
+            <AnimatedName text='I&apos;m &nbsp;Abhinand'/>
+        </div>
+
        <div className=' w-full flex justify-between items-center lg:hidden'>
-            <nav>
-                <span className='mx-10 -ml-20 text-2xl '>I&apos;m Abhinand</span>
+            <nav className='flex flex-row'>
+                <div>
+                    <AnimatedName text='I&apos;m &nbsp;Abhinand' className='-ml-10 mr-10 !text-2xl'/>
+                </div>
+                <div>
                     <CustomLink href='/' title='Home' className='mr-4'/>
                     <CustomLink href='/about' title='About Me' className='mx-4' />
                     <CustomLink href='/projects' title='Projects' className='mx-4'/>
-                    {/* <CustomLink href='/articles' title='articles' className='ml-4'/> */}
-
+                </div>    
             </nav>
 
             <nav className='flex items-center justify-center flex-wrap '>
@@ -102,7 +109,6 @@ const NavBar = () => {
                     }
                 </button>
 
-                
             </nav>
        </div>
 
@@ -140,13 +146,6 @@ const NavBar = () => {
                    </motion.a>
 
 
-                {/* <motion.a href='https://twiter.com' target={"_blank"}
-                   whileHover={{y:-2}}
-                   whileTap={{scale:0.9}}
-                   className='w-6 mr-3 sm:mx-1'>
-                       <TwitterIcon/>
-                   </motion.a> */}
-
 
                <button
                onClick={()=>setMode(mode=="light" ? "dark":"light")}
@@ -165,9 +164,11 @@ const NavBar = () => {
         </motion.div>
     :null}
 
-        {/* <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-            <Logo/>
-        </div> */}
+
+
+        <div className='absolute left-[50%] top-2 translate-x-[-50%] xs:hidden sm:hidden'>
+            <Logo className=''/>
+        </div>
     </header>
   )
 }
