@@ -5,7 +5,13 @@ import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import skillbridge from '../../public/images/projects/1.png'
+import toeman from '../../public/images/projects/4.png'
+import netflix from '../../public/images/projects/3.png'
+import olx from '../../public/images/projects/5.png'
+import noteapp from '../../public/images/projects/7.png'
+import todoapp from '../../public/images/projects/6.png'
+
 import TransitionEffect from '@/components/TransitionEffect'
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -97,55 +103,57 @@ function Projects() {
                                 link='https://learn.skillbridge.store/'
                                 type='Feature project'
                                 github='https://github.com/abhinandav/SkillBridge-Elearning-Application'
-                                img={project1}
+                                img={skillbridge}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                title='Crypto Screener Application'
-                                link='/'
+                                title='Netflix Apllication Clone'
+                                link='https://netflilx.vercel.app/'
                                 type='Mini-Project'
-                                github='/'
-                                img={project1}
+                                github='https://github.com/abhinandav/Netflix-react-clone'
+                                img={netflix}
                             />
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                    title='Crypto Screener Application'
-                                    link='/'
+                                    title='OLX Platform'
+                                    link='https://oilx-react.vercel.app/'
                                     type='Project'
-                                    github='/'
-                                    img={project1}
+                                    github='https://github.com/abhinandav/Olx-Recat-Clone'
+                                    img={olx}
                                 />
                         </div>
 
                         <div className='col-span-12'>
                             <FeaturedProject
-                                    title='Crypto Screener Application'
-                                    summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.'
-                                    link='/'
+                                    title='Toeman.online E-commerce website'
+                                    summary='Toeman is an e-commerce app focused on selling and purchasing footwear.
+                                     Built with Django, it offers features like discount coupons, referral discounts,
+                                     wallet pay and integrated Razorpay for secure payments, providing a seamless shopping experience.'
+                                    link='https://store.toeman.online/'
                                     type='Feature project'
-                                    github='/'
-                                    img={project1}
+                                    github='https://github.com/abhinandav/Toeman-DjangoEcommerce'
+                                    img={toeman}
                                 />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                    title='Crypto Screener Application'
-                                    link='/'
+                                    title='Online Note Saver '
+                                    link='https://writenote.vercel.app/login'
                                     type='Project'
-                                    github='/'
-                                    img={project1}
+                                    github='https://github.com/abhinandav/Online-Note'
+                                    img={noteapp}
                                 />
                             </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                    title='Crypto Screener Application'
-                                    link='/'
+                                    title='Goal Setter'
+                                    link='https://setgoals-app.vercel.app/'
                                     type='Project'
-                                    github='/'
-                                    img={project1}
+                                    github='https://github.com/abhinandav/TODO-using-React'
+                                    img={todoapp}
                                 />
                         </div>
                     </div>

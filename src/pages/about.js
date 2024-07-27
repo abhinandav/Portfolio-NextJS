@@ -94,7 +94,7 @@ function about() {
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                         <AnimatedNumbers value={5}/>+
                         </span>
-                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Certifications</h2>
+                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Certifications completed</h2>
                     </div>
                 </div>
             </div>
