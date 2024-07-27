@@ -8,9 +8,12 @@ import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import LightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import TransitionEffect from '@/components/TransitionEffect'
+import ParticleContainer from '@/components/ParticleContainer'
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 
 export default function Home() {
+  const [mode] = useThemeSwitcher();
   return (
     <>
       <Head>
@@ -19,6 +22,9 @@ export default function Home() {
         
       </Head>
       <TransitionEffect/>
+
+      <ParticleContainer theme={mode} />
+
       <main className='flext items-center text-dark w-full  min-h-screen dark:text-light ' >
        <Layout className='pt-0 md:p-16 sm:pt-8 '>
         <div className='flex items-center justify-between w-full  lg:flex-col'>

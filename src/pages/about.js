@@ -9,6 +9,8 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import TransitionEffect from '@/components/TransitionEffect'
+import ParticleContainer from '@/components/ParticleContainer'
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 
 const AnimatedNumbers=({value})=>{
@@ -34,7 +36,8 @@ const AnimatedNumbers=({value})=>{
         return<span ref={ref}></span>
 }
 
-function about() {
+function About() {
+    const [mode] = useThemeSwitcher();
   return (
     <>
     <Head>
@@ -42,6 +45,8 @@ function about() {
         <meta name="description" content='about me'/>
     </Head>
     <TransitionEffect/>
+    <ParticleContainer theme={mode} />
+
     <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
             <AnimatedText text='Passion Fuels Purpose!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'/>
@@ -109,4 +114,4 @@ function about() {
   )
 }
 
-export default about
+export default About

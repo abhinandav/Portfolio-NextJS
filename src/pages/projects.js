@@ -14,6 +14,8 @@ import todoapp from '../../public/images/projects/6.png'
 
 import TransitionEffect from '@/components/TransitionEffect'
 import ZoomImage from '@/components/ZoomImage'
+import ParticleContainer from '@/components/ParticleContainer'
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
@@ -83,15 +85,18 @@ const Project = ({ title, type, img, link, github }) => {
 }
 
 function Projects() {
+  const [mode] = useThemeSwitcher();
+
     return (
         <>
             <Head>
                 <title>Projects</title>
                 <meta name="description" content='projects page' />
             </Head>
+
             <TransitionEffect/>
 
-
+            <ParticleContainer theme={mode} />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text='Imagination Trumps Knowledge!' className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
