@@ -114,7 +114,7 @@ function Projects() {
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                title='Netflix Apllication Clone'
+                                title='Netflix Application Clone'
                                 link='https://netflilx.vercel.app/'
                                 type='Mini-Project'
                                 github='https://github.com/abhinandav/Netflix-react-clone'
