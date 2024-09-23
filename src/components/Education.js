@@ -62,7 +62,7 @@ function Education() {
                 />
 
                 <Details
-                type="Bachelor of Bomputer Application - BCA" 
+                type="Bachelor of Computer Application - BCA" 
                 institute='Pilathara Co-Op Arts & Science College '
                 time="2020 Aug - 2023 Apr" place="Kannur, Kerala"
                 info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering and Web development." 
